@@ -1,10 +1,16 @@
-import "./styles.css";
+import { Navbar, NavbarBrand} from 'reactstrap';
+import './App.css';
 
-export default function App() {
+function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <Navbar dark color="primary">
+        <div className="container">
+          <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
+        </div>
+      </Navbar>
     </div>
   );
 }
+
+export default App;
